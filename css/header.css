@@ -1,5 +1,6 @@
 .header-bg {
   background: #000;
+  color: #fff;
 }
 
 .header {
@@ -8,9 +9,10 @@
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
 
-  max-width: 1160px;
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -21,10 +23,11 @@
 }
 
 .header-menu a {
+  font-family: "Poppins";
+  font-weight: 400;
   display: inline-block;
   font-size: 1.8rem;
   padding: 1.6rem 0;
-  color: #fff;
   border-radius: 0.4rem;
   position: relative;
 }
