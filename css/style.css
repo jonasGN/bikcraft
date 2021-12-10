@@ -1,36 +1,8 @@
-@import url("./header.css");
-@import url("./intro.css");
+@import "./global/global.css";
+@import "./global/header.css";
 
-html {
-  /* Normaliza o padrão de 16 para 10 */
-  font-size: 62.5%;
-}
+/* Utilities */
+@import "./utils/components.css";
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
+/* Home page */
+@import "./home/intro.css";
