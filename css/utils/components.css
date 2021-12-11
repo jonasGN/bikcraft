@@ -32,3 +32,25 @@
     padding: 1.2rem 1.6rem;
   }
 }
+
+.link {
+  display: inline-block;
+  color: var(--color-p1);
+  font: 500 2.4rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: currentColor;
+  position: absolute;
+  margin-top: 0.4rem;
+}
+
+.link:hover {
+  color: var(--color-0);
+}
