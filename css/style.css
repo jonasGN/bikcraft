@@ -2,6 +2,7 @@
 @import "./utils/colors.css";
 @import "./utils/typografy.css";
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Utilities */
 @import "./utils/components.css";
