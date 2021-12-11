@@ -24,6 +24,10 @@
   margin-bottom: 1.6rem;
 }
 
+.bike-list a {
+  display: block;
+}
+
 .bike-list .font-1-xl {
   display: flex;
   align-items: center;
