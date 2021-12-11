@@ -8,3 +8,6 @@
 
 /* Home page */
 @import "./home/intro.css";
+
+/* Bikes */
+@import "./bikes/bike-list.css";
