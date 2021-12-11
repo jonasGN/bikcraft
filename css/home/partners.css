@@ -51,3 +51,9 @@
     border-top: 0.2rem solid var(--color-2);
   }
 }
+
+@media (max-width: 600px) {
+  .partners li {
+    padding: 2rem;
+  }
+}
