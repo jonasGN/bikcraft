@@ -8,7 +8,8 @@
 }
 
 .button,
-.button-secondary {
+.button-secondary,
+.button-arrow {
   display: inline-block;
   background: linear-gradient(var(--color-p1), #f2a50c);
   color: var(--color-p5);
@@ -24,7 +25,8 @@
   width: max-content;
 }
 
-.button:hover {
+.button:hover,
+.button-arrow:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
@@ -37,9 +39,29 @@
   background: var(--color-9);
 }
 
+.button-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.button-arrow::after {
+  content: "";
+  display: inline-block;
+  background: url("../../img/icones/seta.svg") no-repeat center;
+  width: 1.8rem;
+  height: 1rem;
+  margin-left: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.button-arrow:hover::after {
+  transform: translateX(0.4rem);
+}
+
 @media (max-width: 600px) {
   .button,
-  .button-secondary {
+  .button-secondary,
+  .button-arrow {
     font-size: 1.6rem;
     padding: 1.2rem 1.6rem;
   }
