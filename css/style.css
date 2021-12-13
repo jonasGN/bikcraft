@@ -19,7 +19,8 @@
 
 /* Insurance */
 @import "./insurance/insurance.css";
-@import "./insurance/insurance-plans.css";
+@import "./insurance/insurance-benefits.css";
+@import "./insurance/insurance-questions.css";
 
 /* Policy */
 @import "./policy/policy.css";

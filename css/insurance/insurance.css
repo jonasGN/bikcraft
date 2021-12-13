@@ -1,81 +1,71 @@
+.insurance-bg {
+  background: var(--color-11);
+  color: var(--color-0);
+}
+
+.insurance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 #insurance-page .insurance {
   padding-top: 0;
 }
 
-.insurance-bg {
+.insurance h2 {
+  grid-column: 1 / -1;
+}
+
+.insurance-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
   background: var(--color-12);
+  padding: 3.2rem 3.2rem 3.2rem 6rem;
+  border-radius: 0.4rem;
 }
 
-.insurance-benefits-bg {
-  background-color: var(--color-12);
-  padding: 12rem 0;
+.insurance-item h3 {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
 }
 
-.insurance-benefits ul {
+.insurance-item a {
+  grid-column: 1 / -1;
+}
+
+.insurance-item > span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.insurance-item ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  margin-top: 8rem;
+  gap: 2rem;
+  margin-bottom: 3.2rem;
+  grid-column: 1 / -1;
 }
 
-.insurance-benefits img {
-  width: 3.2rem;
-  height: 3.2rem;
+.insurance-item li {
+  position: relative;
 }
 
-.insurance-benefits h3 {
-  font: 500 2.4rem/1.5 "Poppins", sans-serif;
-  color: var(--color-0);
-}
-
-.insurance-benefits li {
-  display: grid;
-  gap: 0.8rem;
-  align-content: flex-start;
-}
-
-.insurance-questions {
-  padding: 12rem 0;
-}
-
-.insurance-questions h2 {
-  margin-bottom: 6rem;
-}
-
-.insurance-question-item {
-  padding: 2rem;
-  cursor: pointer;
-}
-
-.insurance-question-item:nth-child(odd) {
-  background: var(--color-1);
-}
-
-.insurance-question-item dt {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 0.8rem;
-  align-items: center;
-}
-
-.insurance-question-item dt::before {
+.insurance-item li::before {
+  --size: 2.4rem;
   content: "";
-  display: inline-block;
-  width: 1.2rem;
-  height: 0.8rem;
-  background: var(--color-p1);
+  width: var(--size);
+  height: var(--size);
+  background: url("../../img/icones/lista.svg") no-repeat center;
+  position: absolute;
+  left: -2.8rem;
 }
 
-.insurance-question-item dt::after {
-  content: "";
-  display: inline-block;
-  width: 1.2rem;
-  height: 0.8rem;
-  background: url("../../img/icones/seta-abrir.svg") no-repeat center;
-}
-
-.insurance-question-item dd {
-  padding-top: 1.6rem;
-  padding-left: 2rem;
-  max-width: 75ch;
+@media (max-width: 800px) {
+  .insurance {
+    grid-template-columns: 1fr;
+  }
 }

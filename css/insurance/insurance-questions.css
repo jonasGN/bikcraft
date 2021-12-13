@@ -1,0 +1,67 @@
+.insurance-questions {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.insurance-questions h2 {
+  margin-bottom: 6rem;
+}
+
+.insurance-question-item {
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.insurance-question-item:nth-child(odd) {
+  background: var(--color-1);
+}
+
+.insurance-question-item dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.insurance-question-item dt::before,
+.insurance-question-item dt::after {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 0.8rem;
+}
+
+.insurance-question-item dt::before {
+  background: var(--color-p1);
+}
+
+.insurance-question-item dt::after {
+  background: url("../../img/icones/seta-abrir.svg") no-repeat center;
+}
+
+.insurance-question-item dd {
+  padding-top: 1.6rem;
+  padding-left: 2rem;
+  max-width: 75ch;
+}
+
+@media (max-width: 800px) {
+  .insurance-questions {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .insurance-questions h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .insurance-question-item dt {
+    align-items: flex-start;
+  }
+  .insurance-question-item dt::before,
+  .insurance-question-item dt::after {
+    margin-top: 0.8rem;
+  }
+}

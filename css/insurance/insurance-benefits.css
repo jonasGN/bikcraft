@@ -1,0 +1,32 @@
+.insurance-benefits-bg {
+  background-color: var(--color-12);
+  padding: 12rem 0;
+}
+
+.insurance-benefits ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 4rem 8rem;
+  margin-top: 6rem;
+}
+
+.insurance-benefits img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.insurance-benefits li {
+  display: grid;
+  gap: 0.8rem;
+  align-content: flex-start;
+}
+
+@media (max-width: 800px) {
+  .insurance-benefits-bg {
+    padding: 6rem 0;
+  }
+  .insurance-benefits ul {
+    gap: 2rem 4rem;
+    margin-top: 4rem;
+  }
+}
