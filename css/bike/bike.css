@@ -37,6 +37,11 @@
   margin-bottom: 3.2rem;
 }
 
+.bike-details h2 {
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
 .bike-buy {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -61,17 +66,12 @@
 }
 
 .bike-info {
-  margin-bottom: 3.2rem;
-}
-
-.bike-details h2 {
-  text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem;
 }
 
 .bike-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
   background: var(--color-12);
   padding: 3.2rem;
@@ -88,8 +88,7 @@
   margin-bottom: 0.8rem;
 }
 
-.bike-data .bike-card {
-  grid-template-columns: 1fr;
+.bike-data {
   gap: 0.8rem;
 }
 
@@ -104,15 +103,8 @@
   border-bottom: none;
 }
 
-#bike-page .bike-list {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-
-#bike-page .bike-list ul {
-  max-width: 1200px;
-  padding-left: 0;
-  padding-right: 0;
+.bike-data span {
+  color: var(--color-6);
 }
 
 @media (max-width: 800px) {
@@ -131,10 +123,6 @@
     font-size: 2.4rem;
     text-transform: uppercase;
   }
-  #bike-page .bike-list {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
 }
 
 @media (max-width: 400px) {
@@ -142,7 +130,7 @@
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
-  .bike-card {
+  .bike-info {
     grid-template-columns: 1fr;
   }
 }

@@ -3,6 +3,11 @@
   padding-bottom: 12rem;
 }
 
+#bike-page .bike-list {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 .bike-list .font-1-xxl {
   margin-bottom: 2rem;
 }
@@ -15,6 +20,10 @@
   gap: 4rem;
   padding: 2rem;
   overflow-x: auto;
+}
+
+#bike-page .bike-list ul {
+  padding: 2rem 0;
 }
 
 .bike-list li {
@@ -55,6 +64,10 @@
 @media (max-width: 800px) {
   .bike-list {
     padding-bottom: 6rem;
+  }
+  #bike-page .bike-list {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .bike-list ul {
     gap: 2rem;
