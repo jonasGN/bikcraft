@@ -27,10 +27,6 @@
   text-transform: uppercase;
 }
 
-.font-1-m-b {
-  font-weight: 600;
-}
-
 .font-2-m {
   font: 500 1.8rem/1.35 "Roboto", sans-serif;
 }
@@ -38,6 +34,10 @@
 .font-1-m,
 .font-1-m-b {
   font: 500 1.8rem/1.35 "Poppins", sans-serif;
+}
+
+.font-1-m-b {
+  font-weight: 600;
 }
 
 .font-1-s {

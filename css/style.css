@@ -19,6 +19,7 @@
 
 /* Insurance */
 @import "./insurance/insurance.css";
+@import "./insurance/insurance-plans.css";
 
 /* Policy */
 @import "./policy/policy.css";
