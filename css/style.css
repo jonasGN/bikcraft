@@ -24,3 +24,7 @@
 
 /* Policy */
 @import "./policy/policy.css";
+
+/* Bike */
+@import "./bike/bike.css";
+@import "./bike/bike-insurance.css";

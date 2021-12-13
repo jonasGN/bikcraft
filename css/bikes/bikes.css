@@ -1,4 +1,4 @@
-.bike {
+.bikes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -8,16 +8,16 @@
 }
 
 /* you can use position relative / absolute as well */
-.bike-img {
+.bikes-img {
   display: grid;
 }
 
-.bike-img img {
+.bikes-img img {
   grid-column: 1;
   grid-row: 1;
 }
 
-.bike-img span {
+.bikes-img span {
   grid-column: 1;
   grid-row: 1;
   place-self: start end;
@@ -28,23 +28,23 @@
   border-radius: 0.4rem 0 0 0.4rem;
 }
 
-.bike-details {
+.bikes-details {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: flex-start;
 }
 
-.bike-details h2,
-.bike-details > p {
+.bikes-details h2,
+.bikes-details > p {
   grid-column: 1 / -1;
 }
 
-.bike-details h2 {
+.bikes-details h2 {
   margin-bottom: 2rem;
   color: var(--color-11);
 }
 
-.bike-details h2::before {
+.bikes-details h2::before {
   content: "";
   display: block;
   width: 1.2rem;
@@ -53,69 +53,69 @@
   margin-bottom: 0.8rem;
 }
 
-.bike-details > p {
+.bikes-details > p {
   margin-bottom: 3.2rem;
 }
 
-.bike-details-list {
+.bikes-details-list {
   display: grid;
   gap: 1.6rem;
 }
 
-.bike-details-list li {
+.bikes-details-list li {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
 
-.bike-details a {
+.bikes-details a {
   place-self: end;
 }
 
-.bike-content {
+.bikes-content {
   color: var(--color-8);
 }
 
-.bike-bg:nth-child(even) {
+.bikes-bg:nth-child(even) {
   background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 0);
   color: var(--color-5);
 }
 
-.bike-bg:nth-child(even) h2 {
+.bikes-bg:nth-child(even) h2 {
   color: var(--color-0);
 }
 
 @media (max-width: 1000px) {
-  .bike-details a {
+  .bikes-details a {
     grid-column: 1 / -1;
     place-self: start;
   }
-  .bike-details-list {
+  .bikes-details-list {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 3.2rem;
   }
 }
 
 @media (max-width: 800px) {
-  .bike {
+  .bikes {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-  .bike-bg:nth-child(even) {
+  .bikes-bg:nth-child(even) {
     background: var(--color-11);
   }
 }
 
 @media (max-width: 600px) {
-  .bike-details-list {
+  .bikes-details-list {
     font-size: 1.6rem;
   }
 }
 
 @media (max-width: 400px) {
-  .bike-details-list {
+  .bikes-details-list {
     grid-template-columns: 1fr;
   }
 }
