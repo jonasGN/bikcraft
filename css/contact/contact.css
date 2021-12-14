@@ -1,0 +1,110 @@
+#contact-page {
+  background-color: var(--color-1);
+}
+
+.contact-bg {
+  --card-padding: 6rem;
+  --shadow: 0 2rem 0.2rem rgba(0, 0, 0, 0.1);
+  background: linear-gradient(var(--color-11) 50%, var(--color-1) 0);
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  border-radius: 0.4rem;
+}
+
+.contact-info,
+.contact-form {
+  box-shadow: var(--shadow);
+}
+
+.contact-info {
+  background: var(--color-12);
+  padding: var(--card-padding);
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.contact-info h2 {
+  margin-bottom: 6rem;
+}
+
+.contact-local,
+.contact-emails,
+.contact-phones {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.contact-phones {
+  margin-bottom: 6rem;
+}
+
+.contact-local p,
+.contact-emails a {
+  margin-bottom: 0.8rem;
+}
+
+.contact-emails a {
+  display: block;
+}
+
+.contact-form {
+  background: var(--color-0);
+  padding: var(--card-padding);
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+/*  */
+.contact-stores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 4rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.contact-stores h2 {
+  margin-bottom: 6rem;
+  grid-column: 1 / -1;
+}
+
+.contact-store {
+  background: var(--color-0);
+  border-radius: 0.4rem;
+}
+
+.contact-store-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem 1.6rem;
+  padding: 3.2rem;
+}
+
+.contact-store-info h3,
+span {
+  grid-column: 1 / -1;
+}
+
+.contact-store-info > div {
+  display: grid;
+  gap: 0.8rem;
+  border-left: 0.2rem solid var(--color-2);
+  padding-left: 1.2rem;
+}
+
+.contact-store-info span {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.contact-store-info span::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../../img/icones/horario.svg") no-repeat center;
+}

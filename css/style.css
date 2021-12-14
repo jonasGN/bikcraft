@@ -28,3 +28,6 @@
 /* Bike */
 @import "./bike/bike.css";
 @import "./bike/bike-insurance.css";
+
+/* Contact */
+@import "./contact/contact.css";
