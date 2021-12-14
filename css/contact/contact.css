@@ -3,8 +3,6 @@
 }
 
 .contact-bg {
-  --card-padding: 6rem;
-  --shadow: 0 2rem 0.2rem rgba(0, 0, 0, 0.1);
   background: linear-gradient(var(--color-11) 50%, var(--color-1) 0);
 }
 
@@ -14,127 +12,62 @@
   border-radius: 0.4rem;
 }
 
-.contact-info,
-.contact-form {
-  box-shadow: var(--shadow);
+.contact-data {
+  box-shadow: 0 2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
-.contact-info {
+.contact-data {
   background: var(--color-12);
-  padding: var(--card-padding);
+  padding: 6rem;
   border-radius: 0.4rem 0 0 0.4rem;
 }
 
-.contact-info h2 {
+.contact-data h2 {
   margin-bottom: 6rem;
 }
 
-.contact-local,
-.contact-emails,
-.contact-phones {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  margin-bottom: 3.2rem;
-}
-
-.contact-phones {
-  margin-bottom: 6rem;
-}
-
-.contact-local p,
-.contact-emails a {
-  margin-bottom: 0.8rem;
-}
-
-.contact-emails a {
+.contact-address a {
   display: block;
 }
 
-.contact-form {
+.contact-address a:hover {
+  color: var(--color-0);
+}
+
+.contact-local,
+.contact-address a {
+  padding-left: 2.8rem;
+  margin-bottom: 3.2rem;
+  background-repeat: no-repeat;
+  background-position: left 0 top 0.2rem;
+}
+
+.contact-local {
+  margin-bottom: 3.2rem;
+  padding-left: 2.8rem;
+  background-image: url("../../img/icones/local.svg");
+}
+
+.contact-local p {
+  margin-bottom: 0.8rem;
+}
+
+.contact-address a:first-child {
+  background-image: url("../../img/icones/email.svg");
+  margin-bottom: 0.8rem;
+}
+
+.contact-address a:last-child {
+  background-image: url("../../img/icones//telefone.svg");
+  margin-bottom: 6rem;
+}
+
+.contact-data .footer-media-list {
+  padding-left: 2.8rem;
+}
+
+/* .contact-form {
   background: var(--color-0);
   padding: var(--card-padding);
   border-radius: 0 0.4rem 0.4rem 0;
-}
-
-/*  */
-.contact-store-locals {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 4rem;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-
-.contact-store-locals h2 {
-  margin-bottom: 6rem;
-  grid-column: 1 / -1;
-}
-
-.contact-store {
-  background: var(--color-0);
-  border-radius: 0.4rem;
-}
-
-.contact-store > img {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.contact-store-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.2rem 1.6rem;
-  padding: 3.2rem;
-}
-
-.contact-store-info h3,
-.contact-store-info span {
-  grid-column: 1 / -1;
-}
-
-.contact-store-info > div {
-  display: grid;
-  gap: 0.8rem;
-  border-left: 0.2rem solid var(--color-2);
-  padding-left: 1.2rem;
-  align-content: flex-start;
-}
-
-.contact-store-info span {
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-}
-
-.contact-store-info span::before {
-  content: "";
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background: url("../../img/icones/horario.svg") no-repeat center;
-}
-
-@media (max-width: 800px) {
-  .contact-store-locals {
-    gap: 0 2rem;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-  .contact-store-locals h2 {
-    margin-bottom: 3.2rem;
-  }
-  .contact-store-info {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .contact-store-locals {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .contact-store-locals h2 {
-    margin-bottom: 2rem;
-  }
-}
+} */
