@@ -6,6 +6,7 @@
 
 /* Utilities */
 @import "./utils/components.css";
+@import "./utils/form.css";
 
 /* Home page */
 @import "./home/intro.css";
