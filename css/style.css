@@ -33,3 +33,6 @@
 /* Contact */
 @import "./contact/contact.css";
 @import "./contact/contact-stores.css";
+
+/* Price quote */
+@import "./price-quote/price-quote.css";

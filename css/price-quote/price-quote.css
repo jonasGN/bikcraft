@@ -1,0 +1,126 @@
+#quote-page {
+  background: linear-gradient(var(--color-11) 60rem, var(--color-1) 0);
+}
+
+.quote {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 12rem;
+}
+
+.quote h2 {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.quote h2::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.8rem;
+  background-color: var(--color-p1);
+  position: absolute;
+  left: -1.2rem;
+  margin-bottom: 0.1rem;
+}
+
+.quote-product,
+.quote-form {
+  padding: 6rem;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.quote-product {
+  background-color: var(--color-12);
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.quote-product > * {
+  grid-column: 1 / -1;
+}
+
+.quote-product > label {
+  grid-column: initial;
+}
+
+.quote-product label {
+  font: 400 1.6rem/1.5 "Poppins", sans-serif;
+  color: var(--color-4);
+  background-color: var(--color-10);
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: initial;
+  border: 0.1rem solid transparent;
+}
+
+.quote-product label::before {
+  --size: 1.2rem;
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: var(--size);
+  height: var(--size);
+  border: 0.1rem solid var(--color-6);
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+.quote-product label span {
+  display: none;
+}
+
+.quote-product label:hover {
+  background-color: var(--color-9);
+}
+
+.quote-product input:focus + label {
+  box-shadow: 0 0 0 0.2rem var(--color-p1);
+  border-color: var(--color-12);
+}
+
+.quote-product input:checked + label {
+  color: var(--color-11);
+  background-color: var(--color-0);
+}
+
+.quote-product input:checked + label::before {
+  border-color: var(--color-7);
+  box-shadow: inset 0 0 0 0.3rem var(--color-0),
+    inset 0 0 0 0.5rem var(--color-7);
+}
+
+.quote-product input:checked + label span {
+  display: inline-block;
+}
+
+.quote-product input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.quote-form {
+  background-color: var(--color-0);
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+/* .quote-content {
+  display: none;
+} */
+
+.quote-content h2,
+.quote-form h2:nth-of-type(n + 2) {
+  margin-top: 2rem;
+}
+
+/* similar to #bikcraft:checked + label + input + label + #quote-bikcraft */
+#bikcraft:checked ~ #quote-bikcraft,
+#insurance:checked ~ #quote-insurance {
+  display: grid;
+  gap: 2rem;
+}
