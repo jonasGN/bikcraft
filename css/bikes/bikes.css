@@ -5,6 +5,7 @@
   align-content: flex-start;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  background: url("../../img/dec/top-right.svg") no-repeat top 6rem right 2rem;
 }
 
 /* you can use position relative / absolute as well */

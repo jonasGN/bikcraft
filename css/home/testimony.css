@@ -18,6 +18,8 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: end;
+  background: url("../../img/dec/top-left-p.svg") no-repeat top 4rem left 4rem,
+    url("../../img/dec/bottom-right-p.svg") no-repeat bottom 4rem right 4rem;
 }
 
 .testimony-content p {

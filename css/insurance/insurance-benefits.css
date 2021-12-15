@@ -1,5 +1,8 @@
 .insurance-benefits-bg {
-  background-color: var(--color-12);
+  background: url("../../img/dec/bottom-left.svg") no-repeat bottom 4rem left
+      2rem,
+    url("../../img/dec/bottom-right.svg") no-repeat bottom 4rem right 2rem,
+    var(--color-12);
   padding: 12rem 0;
 }
 
@@ -23,6 +26,7 @@
 
 @media (max-width: 800px) {
   .insurance-benefits-bg {
+    background: var(--color-12);
     padding: 6rem 0;
   }
   .insurance-benefits ul {

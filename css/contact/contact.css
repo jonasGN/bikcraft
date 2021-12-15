@@ -15,12 +15,15 @@
 }
 
 .contact-data {
-  background: var(--color-12);
+  background: var(--color-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 4rem left 4rem;
   border-radius: 0.4rem 0 0 0.4rem;
 }
 
 .contact-form {
-  background-color: var(--color-0);
+  background: var(--color-0) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 6rem right 6rem;
+  border-radius: 0.4rem 0 0 0.4rem;
   border-radius: 0 0.4rem 0.4rem 0;
 }
 
@@ -79,9 +82,11 @@
   }
   .contact-data {
     border-radius: 0.4rem 0.4rem 0 0;
+    background: var(--color-12);
   }
   .contact-form {
     border-radius: 0 0 0.4rem 0.4rem;
+    background-position: bottom 2rem right 2rem;
   }
   .contact-data h2,
   .contact-address a:last-child {

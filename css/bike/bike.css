@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem 4rem;
+  background: url("../../img/dec/bottom-left.svg") no-repeat bottom left 2rem;
 }
 
 .bike .page-title {
