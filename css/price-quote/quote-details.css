@@ -1,0 +1,30 @@
+.quote-details {
+  background-color: var(--color-0);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.quote-details li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.quote-details li:nth-child(n + 1) {
+  margin-bottom: 0.8rem;
+}
+
+.quote-details li img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+@media (max-width: 400px) {
+  .quote-details {
+    grid-template-columns: 1fr;
+  }
+}

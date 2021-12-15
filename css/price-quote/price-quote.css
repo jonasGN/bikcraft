@@ -109,9 +109,9 @@
   border-radius: 0 0.4rem 0.4rem 0;
 }
 
-/* .quote-content {
+.quote-content {
   display: none;
-} */
+}
 
 .quote-content h2,
 .quote-form h2:nth-of-type(n + 2) {
@@ -123,4 +123,44 @@
 #insurance:checked ~ #quote-insurance {
   display: grid;
   gap: 2rem;
+}
+
+.quote-product input:checked + label + .quote-details {
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+  .quote-product,
+  .quote-form {
+    padding: 3.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .quote-product.form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .quote {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .quote-product,
+  .quote-form {
+    padding: 2rem;
+  }
+  .quote-product {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+  .quote-form {
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .quote-product.form {
+    grid-template-columns: 1fr;
+  }
 }

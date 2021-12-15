@@ -106,7 +106,7 @@
 }
 
 @media (max-width: 800px) {
-  .page-title-bg {
+  .page-title {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
