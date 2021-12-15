@@ -1,9 +1,5 @@
 #contact-page {
-  background-color: var(--color-1);
-}
-
-.contact-bg {
-  background: linear-gradient(var(--color-11) 50%, var(--color-1) 0);
+  background: linear-gradient(var(--color-11) 60rem, var(--color-1) 0);
 }
 
 .contact {
@@ -13,7 +9,7 @@
 }
 
 .contact-data,
-.contact .form {
+.contact-form {
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
   padding: 6rem;
 }
@@ -23,7 +19,7 @@
   border-radius: 0.4rem 0 0 0.4rem;
 }
 
-.contact .form {
+.contact-form {
   background-color: var(--color-0);
   border-radius: 0 0.4rem 0.4rem 0;
 }
@@ -78,8 +74,14 @@
     grid-template-columns: 1fr;
   }
   .contact-data,
-  .contact .form {
+  .contact-form {
     padding: 2rem;
+  }
+  .contact-data {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+  .contact-form {
+    border-radius: 0 0 0.4rem 0.4rem;
   }
   .contact-data h2,
   .contact-address a:last-child {

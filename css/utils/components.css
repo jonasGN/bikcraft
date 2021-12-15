@@ -93,6 +93,9 @@
 .page-title-bg {
   background: var(--color-11);
   color: var(--color-0);
+}
+
+.page-title {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
