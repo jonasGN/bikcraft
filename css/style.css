@@ -37,3 +37,6 @@
 /* Price quote */
 @import "./price-quote/price-quote.css";
 @import "./price-quote/quote-details.css";
+
+/* Animations */
+@import "./animations/simple-anime.css";

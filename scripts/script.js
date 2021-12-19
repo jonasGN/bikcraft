@@ -1,3 +1,6 @@
+// when user disables js
+document.documentElement.classList.add("js");
+
 // active header indication in current page
 const primaryNavigation = document.querySelectorAll(".header-menu a");
 
@@ -12,7 +15,7 @@ function activeLink(item) {
 
 if (primaryNavigation) primaryNavigation.forEach(activeLink);
 
-// active insurance items
+// active products
 const insuranceParams = new URLSearchParams(window.location.search);
 
 function activeProduct(param) {
@@ -59,3 +62,6 @@ function changeImgFocus(img) {
 }
 
 if (bikeGalery) bikeGalery.forEach(changeImgFocus);
+
+// animations
+if (window.SimpleAnime) new SimpleAnime();

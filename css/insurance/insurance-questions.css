@@ -54,6 +54,9 @@
   padding-top: 1.6rem;
   padding-left: 2rem;
   max-width: 75ch;
+}
+
+.js .insurance-question-item dd {
   display: none;
 }
 
