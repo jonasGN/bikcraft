@@ -47,7 +47,7 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="button-secondary" href="./price-quote.html">Inscreva-se</a>
+        <a class="button-secondary" href="./price-quote.html?type=insurance&product=silver">Inscreva-se</a>
       </div>
 
       <div class="insurance-item">
@@ -61,7 +61,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="button" href="./price-quote.html">Inscreva-se</a>
+        <a class="button" href="./price-quote.html?type=insurance&product=gold">Inscreva-se</a>
       </div>
     </div>
   </main>
@@ -107,30 +107,30 @@
   <article class="insurance-questions container">
     <h2 class="font-1-xxl">perguntas frequentes<span class="color-p1">.</span></h2>
     <dl class="insurance-questions-list">
-      <div class="insurance-question-item">
+      <button class="insurance-question-item" aria-expanded="true" aria-controls="question-1">
         <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
-      </div>
-      <div class="insurance-question-item">
+        <dd id="question-1" class="font-2-s color-9 active">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </button>
+      <button class="insurance-question-item" aria-expanded="false" aria-controls="question-2">
         <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
-      </div>
-      <div class="insurance-question-item">
+        <dd id="question-2" class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </button>
+      <button class="insurance-question-item" aria-expanded="false" aria-controls="question-3">
         <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
-      </div>
-      <div class="insurance-question-item">
+        <dd id="question-3" class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </button>
+      <button class="insurance-question-item" aria-expanded="false" aria-controls="question-4">
         <dt class="font-1-m-b">Qual a garantia que possuo?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
-      </div>
-      <div class="insurance-question-item">
+        <dd id="question-4" class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </button>
+      <button class="insurance-question-item" aria-expanded="false" aria-controls="question-5">
         <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
-      </div>
-      <div class="insurance-question-item">
+        <dd id="question-5" class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </button>
+      <button class="insurance-question-item" aria-expanded="false" aria-controls="question-6">
         <dt class="font-1-m-b">Quantas trocas posso fazer ao ano?</dt>
-        <dd class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
-      </div>
+        <dd id="question-6" class="font-2-s color-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </button>
     </dl>
   </article>
 
@@ -167,6 +167,8 @@
       <span class="footer-copy font-2-m color-6">Bikcraft © Alguns direitos reservados.</span>
     </div>
   </footer>
+
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

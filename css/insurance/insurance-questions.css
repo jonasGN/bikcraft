@@ -11,6 +11,11 @@
   padding: 2rem;
   cursor: pointer;
   border-radius: 0.4rem;
+  border: none;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--color-0);
 }
 
 .insurance-question-item:nth-child(odd) {
@@ -38,12 +43,22 @@
 
 .insurance-question-item dt::after {
   background: url("../../img/icones/seta-abrir.svg") no-repeat center;
+  transition: 0.3s;
+}
+
+.insurance-question-item[aria-expanded="true"] dt::after {
+  transform: rotate(180deg);
 }
 
 .insurance-question-item dd {
   padding-top: 1.6rem;
   padding-left: 2rem;
   max-width: 75ch;
+  display: none;
+}
+
+.insurance-question-item dd.active {
+  display: block;
 }
 
 @media (max-width: 800px) {
