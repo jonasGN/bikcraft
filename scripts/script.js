@@ -41,3 +41,21 @@ function expandQuestions(question) {
 if (questions) questions.forEach(expandQuestions);
 
 // bike image galery control
+const bikeGalery = document.querySelectorAll(".bike-galery img");
+const bikeGaleryContainer = document.querySelector(".bike-galery");
+
+function changeImgFocus(img) {
+  img.addEventListener("click", (event) => {
+    const currentImg = event.currentTarget;
+
+    const minWidth =
+      matchMedia("(min-width: 460px) and (max-width: 800px)").matches ||
+      matchMedia("(min-width: 920px)").matches;
+
+    if (minWidth) {
+      bikeGaleryContainer.prepend(currentImg);
+    }
+  });
+}
+
+if (bikeGalery) bikeGalery.forEach(changeImgFocus);
